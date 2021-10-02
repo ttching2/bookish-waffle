@@ -1,1 +1,1 @@
-{% include index.html %}
+{% include page.html %}
