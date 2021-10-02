@@ -93,6 +93,7 @@ function connect() {
                         const redeemed = data.redeemed_at;
                         const user = data.user.display_name;
                         const title = data.reward.title;
+                        document.getElementById("sound").play();
                         $('.ws-output').append(redeemed + ": user " + user + " redeemed reward " + title);
                     }
             };
@@ -115,9 +116,4 @@ $(function() {
                                         $('#auth-link').attr("href", url);
                                         $('.auth').show()
                                     }
-});
-
-
-$('#sound_button').click(function() {
-        document.getElementById("sound").play();
 });
